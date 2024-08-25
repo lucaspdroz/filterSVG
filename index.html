@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div>
+      <svg>
+        <filter id="noise">
+          <feTurbulence baseFrequency="0.01 0.003" type="turbulence">
+            <animate
+              attributeName="baseFrequency"
+              dur="3.6s"
+              repeatCount="indefinite"
+              values="0.01 0.003; 0.01 0.005; 0.01 0.003"
+              keyTimes="0; 0.5; 1"
+              keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+              calcMode="spline"
+            />
+          </feTurbulence>
+        </filter>
+      </svg>
+      <img src="" alt="" />
+    </div>
+  </body>
+</html>
